@@ -1,0 +1,7 @@
+@import 'skeleton';
+@import 'vendor/animated';
+
+.fadeIn {
+  text-align: center;
+  @include animated(fadeInUpBig, 1s, 1s)
+}

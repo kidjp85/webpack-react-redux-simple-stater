@@ -1,0 +1,7 @@
+{
+  "name": "Webpack simple starter",
+  "description": "Webpack simple starter",
+  "repository": "https://github.com/kidjp85/webpack-simple-starter",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
