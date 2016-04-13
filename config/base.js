@@ -1,6 +1,8 @@
 'use strict';
 let path = require('path');
 let defaultConfig = require('./defaults');
+let webpack = require('webpack');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
 let additionalPaths = [];
 
 module.exports = {
@@ -22,5 +24,13 @@ module.exports = {
       'images': 'app/assets/images'
     }
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'node_modules/html-webpack-template/index.ejs',
+      title: 'React Idangerous Swiper',
+      appMountId: 'app',
+      inject: false
+    })
+  ],
   module: {}
 };

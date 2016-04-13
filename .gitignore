@@ -1,3 +1,5 @@
 node_modules
 public/*
 .env
+*.log
+npm-debug.log*
