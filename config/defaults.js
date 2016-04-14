@@ -15,6 +15,11 @@ let PATHS = {
  */
 
 let defaultModules = {
+  preLoaders: [{
+    test: /\.(js|jsx)$/,
+    include: PATHS.app,
+    loader: 'eslint-loader'
+  }],
   loaders: [
     {
       test: /\.css$/,
