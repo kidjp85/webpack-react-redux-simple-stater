@@ -3,6 +3,7 @@ let path = require('path');
 let defaultConfig = require('./defaults');
 let webpack = require('webpack');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
+let NpmInstallPlugin = require('npm-install-webpack-plugin');
 let additionalPaths = [];
 
 module.exports = {
@@ -25,6 +26,9 @@ module.exports = {
     }
   },
   plugins: [
+    new NpmInstallPlugin({
+      save: true
+    }),
     new HtmlWebpackPlugin({
       template: 'node_modules/html-webpack-template/index.ejs',
       title: 'React Idangerous Swiper',

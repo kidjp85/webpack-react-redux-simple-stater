@@ -5,7 +5,6 @@ let webpack = require('webpack');
 let merge = require('webpack-merge');
 let baseConfig = require('./base');
 let defaultSettings = require('./defaults');
-let NpmInstallPlugin = require('npm-install-webpack-plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 let config = merge(baseConfig, {
@@ -19,8 +18,11 @@ let config = merge(baseConfig, {
     progress: true,
     stats: 'errors-only',
     host: process.env.HOST,
-    port: process.env.PORT
+    port: defaultSettings.port
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   module: defaultSettings.defaultModules
 });
 
@@ -31,7 +33,7 @@ config.module.loaders.push(
     loaders: ['babel?cacheDirectory'],
     include: [].concat(
       config.additionalPaths, defaultSettings.app
-    )  
+    )
   },
   {
     test: /\.sass/,

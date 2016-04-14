@@ -7,6 +7,7 @@ let baseConfig = require('./base');
 let defaultSettings = require('./defaults');
 let pkg = require('../package.json');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let ServerVendor = ['ejs', 'express', 'compression']
 
 let config = merge(baseConfig, {
   entry: {
@@ -17,7 +18,7 @@ let config = merge(baseConfig, {
   output: {
     path: defaultSettings.public,
     filename: '[name].[chunkhash].min.js',
-    chunkFilename: '[chunkhash].js'
+    chunkFilename: '[chunkhash].min.js'
   },
   cache: false,
   devtool: 'sourcemap',
@@ -64,12 +65,10 @@ config.module.loaders.push(
   {
     test: /\.scss$/,
     loader: ExtractTextPlugin.extract(
-      'style', 'css?minimize!sass'
+      'style',
+      'css?minimize!sass'
     )
   }
 );
 
 module.exports = config;
-
-
-        

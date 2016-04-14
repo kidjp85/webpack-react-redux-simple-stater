@@ -40,6 +40,11 @@ module.exports = {
   },
   resolve: {
     extensions: [ '', '.js', '.jsx' ],
+    alias: {
+      helpers: PATHS.test + '/helpers',
+      components: PATHS.app + '/components/',
+      config: PATHS.app + '/config/' + process.env.REACT_WEBPACK_ENV
+    }
   },
   plugins: []
 };

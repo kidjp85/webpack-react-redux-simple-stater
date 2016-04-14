@@ -3,7 +3,7 @@ var app = express();
 var compression = require('compression')
 
 app.use(compression());
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 3000));
 app.use(express.static(__dirname + '/public'));
 
 // views is directory for all template files
