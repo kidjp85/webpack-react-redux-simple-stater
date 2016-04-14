@@ -21,6 +21,7 @@ https://github.com/kidjp85/webpack-simple-starter.git
 
 Install node packages
 ```bash
+cd webpack-simple-starter
 npm install
 ```
 
