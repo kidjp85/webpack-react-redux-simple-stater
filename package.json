@@ -22,9 +22,12 @@
   "dependencies": {
     "compression": "^1.6.1",
     "ejs": "^2.4.1",
+    "es6-promise": "^3.1.2",
     "express": "^4.13.4",
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8"
+    "react": "^15.0.2",
+    "react-addons-pure-render-mixin": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "superagent": "^1.8.3"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
@@ -61,7 +64,7 @@
     "null-loader": "^0.1.1",
     "open": "0.0.5",
     "phantomjs-prebuilt": "^2.0.0",
-    "react-addons-test-utils": "^0.14.8",
+    "react-addons-test-utils": "^15.0.2",
     "rimraf": "^2.5.2",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
