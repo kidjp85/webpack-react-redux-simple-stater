@@ -14,6 +14,18 @@ let PATHS = {
  * @return {Object}
  */
 
+let aliasPaths = {
+  'libs': path.join(PATHS.app, 'libs'),
+  'styles': path.join(PATHS.app, 'assets', 'styles'),
+  'config': path.join(PATHS.app, 'config'),
+  'actions': path.join(PATHS.app, 'actions'),
+  'components': path.join(PATHS.app, 'components'),
+  'stores': path.join(PATHS.app, 'stores'),
+  'constants': path.join(PATHS.app, 'constants'),
+  'reducers': path.join(PATHS.app, 'reducers'),
+  'containers': path.join(PATHS.app, 'containers')
+};
+
 let defaultModules = {
   preLoaders: [{
     test: /\.(js|jsx)$/,
@@ -48,6 +60,7 @@ let defaultModules = {
 module.exports = {
   app: PATHS.app,
   style: PATHS.style,
+  aliasPaths: aliasPaths,
   public: PATHS.public,
   port: defaultPort,
   defaultModules: defaultModules
