@@ -21,7 +21,14 @@ let config = merge(baseConfig, {
     port: defaultSettings.port
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'node_modules/html-webpack-template/index.ejs',
+      title: 'React Idangerous Swiper',
+      appMountId: 'app',
+      inject: false
+    })
   ],
   module: defaultSettings.defaultModules
 });

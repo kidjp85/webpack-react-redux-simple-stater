@@ -1,5 +1,5 @@
-webpack-simple-starter
-=======================
+webpack-react-redux-simple-stater
+================================
 
 > This simple stater lets you quickly set up a project including karma test runner and Webpack module system.
 
@@ -16,12 +16,13 @@ Out of the box it comes with support for:
 ## Installation
 Clone this repos to your local 
 ```bash
-https://github.com/kidjp85/webpack-simple-starter.git
+https://github.com/kidjp85/webpack-react-redux-simple-stater.git
 ```
 
 Install node packages
 ```bash
-cd webpack-simple-starter
+cd webpack-react-redux-simple-stater
+
 npm install
 ```
 

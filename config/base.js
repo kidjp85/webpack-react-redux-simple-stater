@@ -23,13 +23,5 @@ module.exports = {
     extensions: ['', '.js', '.jsx'],
     alias: defaultConfig.aliasPaths
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'node_modules/html-webpack-template/index.ejs',
-      title: 'React Idangerous Swiper',
-      appMountId: 'app',
-      inject: false
-    })
-  ],
   module: {}
 };
