@@ -23,6 +23,7 @@
     "compression": "^1.6.1",
     "ejs": "^2.4.1",
     "es6-promise": "^3.2.1",
+    "express": "^4.13.4",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-redux": "^4.4.5",
