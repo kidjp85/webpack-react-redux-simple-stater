@@ -30,6 +30,12 @@ module.exports = function(config) {
       ]
     },
     plugins: [
+      'karma-mocha',
+      'karma-chai',
+      'karma-webpack',
+      'karma-coverage',
+      'karma-mocha-reporter',
+      'karma-sourcemap-loader',
       'karma-chrome-launcher',
       'karma-firefox-launcher',
       'karma-ie-launcher',

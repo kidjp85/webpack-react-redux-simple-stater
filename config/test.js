@@ -38,6 +38,19 @@ module.exports = {
       }
     ]
   },
+  node: {
+    fs: 'empty',
+    child_process: 'empty',
+    net: 'empty',
+    tls: 'empty',
+  },
+  // required for enzyme to work properly
+  externals: {
+    jsdom: 'window',
+    'react/addons': true,
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': 'window',
+  },
   resolve: {
     extensions: [ '', '.js', '.jsx' ],
     alias: {
