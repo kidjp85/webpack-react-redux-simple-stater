@@ -1,8 +1,6 @@
 import React from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
+import shouldPureComponentUpdate from 'react-pure-render/function';
 
 export default class BaseComponent extends React.Component {
-  shouldComponentUpdate() {
-    return PureRenderMixin.shouldComponentUpdate.apply(this, arguments);
-  }
+  shouldPureComponentUpdate = shouldPureComponentUpdate;
 }

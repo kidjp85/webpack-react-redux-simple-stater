@@ -1,6 +1,5 @@
 'use strict';
 
-let path = require('path');
 let webpack = require('webpack');
 let merge = require('webpack-merge');
 let baseConfig = require('./base');
@@ -12,7 +11,7 @@ let ServerVendor = ['ejs', 'express', 'compression']
 let config = merge(baseConfig, {
   entry: {
     vendor: Object.keys(pkg.dependencies).filter(function(v) {
-      return v !== 'ejs' && v !== 'express' && v !=='compression';
+      return ServerVendor.indexOf(v) === -1
     })
   },
   output: {
@@ -43,7 +42,7 @@ let config = merge(baseConfig, {
     }),
     new webpack.optimize.DedupePlugin()
   ],
-  module: defaultSettings.defaultModules,
+  module: defaultSettings.defaultModules
 });
 
 // Add needed loaders to the defaults here

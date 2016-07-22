@@ -1,7 +1,12 @@
 @import 'skeleton';
 @import 'vendor/animated';
 
+body {
+  padding: 1em;
+}
+
 .fadeIn {
   text-align: center;
-  @include animated(fadeInUpBig, 1s, 1s)
+  @include animated(fadeInUpBig, 1s, 1s);
+  color: $font-color
 }

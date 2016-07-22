@@ -1,6 +1,5 @@
 'use strict';
 
-let path = require('path');
 let webpack = require('webpack');
 let merge = require('webpack-merge');
 let baseConfig = require('./base');

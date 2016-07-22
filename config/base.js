@@ -1,9 +1,6 @@
 'use strict';
-let path = require('path');
+
 let defaultConfig = require('./defaults');
-let webpack = require('webpack');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
-let NpmInstallPlugin = require('npm-install-webpack-plugin');
 let additionalPaths = [];
 
 module.exports = {

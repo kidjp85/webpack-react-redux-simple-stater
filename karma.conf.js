@@ -28,6 +28,13 @@ module.exports = function(config) {
         { type: 'html' },
         { type: 'text' }
       ]
-    }
+    },
+    plugins: [
+      'karma-chrome-launcher',
+      'karma-firefox-launcher',
+      'karma-ie-launcher',
+      'karma-safari-launcher',
+      'karma-phantomjs-launcher'
+    ]
   });
 };
