@@ -5,6 +5,7 @@ let merge = require('webpack-merge');
 let baseConfig = require('./base');
 let defaultSettings = require('./defaults');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
+let StyleLintPlugin = require('stylelint-webpack-plugin');
 
 let config = merge(baseConfig, {
   devtool: 'eval-source-map',
@@ -27,6 +28,10 @@ let config = merge(baseConfig, {
       title: 'React Idangerous Swiper',
       appMountId: 'app',
       inject: false
+    }),
+    new StyleLintPlugin({
+      failOnError: false,
+      syntax: 'scss'
     })
   ],
   module: defaultSettings.defaultModules
