@@ -19,7 +19,7 @@ module.exports = {
       'redux',
       'react-redux',
       'redux-thunk',
-      'react-pure-render'
+      'react-addons-shallow-compare'
     ]
   },
   module: defaultConf.defaultModules,
