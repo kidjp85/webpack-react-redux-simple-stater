@@ -6,14 +6,14 @@
   "scripts": {
     "test": "karma start",
     "test:watch": "karma start --autoWatch=true --singleRun=false",
-    "start": "NODE_ENV=development node_modules/.bin/webpack-dev-server --config webpackConf/webpack.dev.config.js",
+    "start": "NODE_ENV=development webpack-dev-server --config webpackConf/webpack.dev.config.js",
     "build": "yarn lint && yarn build:clean && yarn build:production",
     "server": "yarn build && node index.js",
     "lint": "eslint --ext .js,.jsx .",
     "lint:fix": "eslint --ext .js,.jsx . --fix",
     "build:clean": "rimraf public/*",
-    "build:dll": "NODE_ENV=production node_modules/.bin/webpack --config webpackConf/webpack.dll.config.js",
-    "build:production": "NODE_ENV=production node_modules/.bin/webpack --config webpackConf/webpack.pro.config.js"
+    "build:dll": "NODE_ENV=production webpack --config webpackConf/webpack.dll.config.js",
+    "build:production": "NODE_ENV=production webpack --config webpackConf/webpack.pro.config.js"
   },
   "keywords": [
     "React",
