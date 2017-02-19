@@ -7,11 +7,12 @@ About
 ====
 webpack-simple-starter will help you build new React projects using modern technologies.
 Out of the box it comes with support for:
-- Webpack
+- Webpack2
+- Redux
 - ES2015 via Babel-Loader
 - Different supported style languages (sass, scss, less, stylus) with Skeleton Css as base framework
 - Automatic code linting via esLint
-- Ability to unit test components via Karma and Mocha/Chai
+- Ability to unit test components via Karma and Mocha
 
 ## Installation
 Clone this repos to your local 
@@ -23,29 +24,29 @@ Install node packages
 ```bash
 cd webpack-react-redux-simple-stater
 
-npm install
+yarn
 ```
 
 ## Usage
 
 Run webpack in dev mode
 ```bash
-npm start
+yarn start
 ```
 
 Run local server (Express Nodejs)
 ```bash
-npm run server
+yarn server
 ```
 
 Run Karma test
 ```bash
-npm run test
+yarn test
 ```
 
 Deploy app to heroku
 ```bash
-npm run build
+yarn build
 heroku create
 git push heroku master
 ```

@@ -1,6 +1,7 @@
 node_modules
 coverage
-public/*
+public/
 .env
+.vscode
 *.log
 npm-debug.log*
