@@ -1,4 +1,4 @@
-var webpackCfg = require('./webpack.config');
+const webpackCfg = require('./webpackConf/webpack.test.config');
 
 module.exports = function(config) {
   config.set({
@@ -9,7 +9,7 @@ module.exports = function(config) {
     ],
     port: 8080,
     captureTimeout: 60000,
-    frameworks: [ 'mocha', 'chai' ],
+    frameworks: [ 'mocha' ],
     client: {
       mocha: {}
     },
@@ -31,7 +31,6 @@ module.exports = function(config) {
     },
     plugins: [
       'karma-mocha',
-      'karma-chai',
       'karma-webpack',
       'karma-coverage',
       'karma-mocha-reporter',

@@ -38,10 +38,13 @@
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
     "react/jsx-first-prop-new-line": 0,
-    import/no-unresolved: [0, {commonjs: true, amd: true}],
-    import/named: 1,
-    import/namespace: 1,
-    import/default: 1,
-    import/export: 1,
+    "react/jsx-filename-extension": 0,
+    "import/no-unresolved": [0, {"commonjs": true, "amd": true}],
+    "import/named": 1,
+    "import/namespace": 1,
+    "import/default": 1,
+    "import/export": 1,
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0
   }
 }

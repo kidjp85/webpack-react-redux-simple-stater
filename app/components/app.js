@@ -5,7 +5,7 @@ export default () => {
     <div className="container">
       <div className="row">
         <div className="columns twelve">
-          <h2 className="fadeIn">Simple starter for webpack</h2>
+          <h2 className="fadeIn">Simple react redux starter for webpack</h2>
         </div>
       </div>
     </div>

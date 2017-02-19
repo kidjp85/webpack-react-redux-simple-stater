@@ -1,6 +1,7 @@
-var express = require('express');
-var app = express();
-var compression = require('compression')
+const express = require('express');
+
+const app = express();
+const compression = require('compression')
 
 app.use(compression());
 app.set('port', (process.env.PORT || 3000));
